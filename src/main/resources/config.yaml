@@ -1,0 +1,19 @@
+common:
+  threads: 8
+
+rabbitmq:
+  host: "127.0.0.1"
+  port: 5672
+  username: rabbitmq
+  password: rabbitmq
+
+parser:
+  baseUrl: "https://www.kommersant.ru/RSS/news.xml"
+  queue: "news"
+  linkQueue: "links"
+  resultQueue: "results"
+
+elasticsearch:
+  indexName: "news"
+  host: "http://localhost:9200"
+  apiKey: "dJFCM5ABQgram-JRF744"
